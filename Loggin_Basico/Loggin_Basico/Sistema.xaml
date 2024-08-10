@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loggin_Basico.Sistema">
+
+    <StackLayout>
+        <!-- University logo image -->
+        <Image 
+            Source="https://www.udoym.edu.do/wp-content/uploads/2020/10/logo_lema_universidad.png"
+            HeightRequest="100"
+            WidthRequest="100"
+            Margin="20" />
+
+        <!-- Welcome label -->
+        <Label 
+            Text="Bienvenidos a la Universidad Dominicana OyM"
+            TextColor="#f0932b"
+            FontSize="25"
+            FontAttributes="Bold"
+            Padding="10"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center" />
+
+        <!-- Description label -->
+        <Label 
+            Text="La Universidad Dominicana OyM, es un centro privado de educación superior de la República Dominicana"
+            TextColor="#273c75"
+            FontSize="20"
+            FontAttributes="Bold"
+            Padding="10"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center" />
+
+        <!-- Founding history label -->
+        <Label 
+            Text="Fue fundada el 12 de enero de 1966 por un selecto grupo de profesores y docentes encabezados por el Dr. José Rafael Abinader"
+            TextColor="#273c75"
+            FontSize="20"
+            FontAttributes="Bold"
+            Padding="10"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center" />
+
+        <!-- Circular frame with an image -->
+        <Frame 
+            Margin="0"
+            BorderColor="#00a8ff"
+            CornerRadius="200"
+            HeightRequest="100"
+            WidthRequest="100"
+            IsClippedToBounds="True"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Image 
+                Source="rafaelabinader.jpg"
+                Aspect="AspectFill"
+                Margin="0" />
+        </Frame>
+
+        <!-- Button to navigate -->
+        <Button 
+            Text="Ir a Universidad"
+            TextColor="Blue"
+            BackgroundColor="Gold"
+            FontSize="20"
+            BorderWidth="5"
+            BorderColor="Black"
+            Margin="25"
+            CornerRadius="25"
+            x:Name="btn_ir"
+            Clicked="btn_ir_Clicked" />
+    </StackLayout>
+</ContentPage>

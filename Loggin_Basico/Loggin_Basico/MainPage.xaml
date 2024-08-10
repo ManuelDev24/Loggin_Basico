@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loggin_Basico.MainPage">
+
+    <StackLayout BackgroundColor="#f5f6fa"
+                 Padding="20"
+                 VerticalOptions="Center">
+
+        <!-- Título -->
+        <Frame BackgroundColor="#192a56"
+               Padding="24"
+               CornerRadius="10"
+               BorderColor="White"
+               HorizontalOptions="Center">
+            <Label Text="Login Basico PDM!"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="30" />
+        </Frame>
+
+        <!-- Icono -->
+        <Frame Margin="10"
+               BorderColor="#192a56"
+               CornerRadius="150"
+               HeightRequest="100"
+               WidthRequest="100"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+            <Image Source="iconologin.png"
+                   BackgroundColor="#ffffff"
+                   Aspect="AspectFill"
+                   HeightRequest="100"
+                   WidthRequest="100" />
+        </Frame>
+
+        <!-- Campos de texto -->
+        <Entry Placeholder="Usuario"
+               TextColor="#192a56"
+               FontSize="25"
+               HorizontalTextAlignment="Center"
+               Margin="20"
+               x:Name="txtUsuario" />
+
+        <Entry Placeholder="Password"
+               IsPassword="True"
+               TextColor="#192a56"
+               FontSize="25"
+               HorizontalTextAlignment="Center"
+               Margin="20"
+               x:Name="txtPassword" />
+
+        <!-- Botones -->
+        <StackLayout Orientation="Horizontal"
+                     HeightRequest="120"
+                     BackgroundColor="#f5f6fa"
+                     Padding="10"
+                     HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#f5f6fa"
+                        Source="aceptar.png"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        x:Name="btnOk" Clicked="btnOk_Clicked" />
+
+            <ImageButton BackgroundColor="#f5f6fa"
+                        Source="no.png"
+                        HeightRequest="100"
+                        WidthRequest="90"
+                        x:Name="btnNo"
+                        Clicked="btnNo_Clicked" />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
